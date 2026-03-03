@@ -1,0 +1,133 @@
+{
+  "version": "1.0.0",
+  "suites": {
+    "standard": {
+      "name": "Standard Benchmark Suite",
+      "description": "A balanced set of prompts covering key LLM capabilities",
+      "prompts": [
+        {
+          "id": "std-001",
+          "category": "reasoning",
+          "name": "Logical Deduction",
+          "prompt": "If all Bloops are Razzies and all Razzies are Lazzies, are all Bloops definitely Lazzies? Explain your reasoning step by step.",
+          "expectedKeywords": ["yes", "transitive", "all", "bloops", "lazzies"],
+          "maxTokens": 200
+        },
+        {
+          "id": "std-002",
+          "category": "summarization",
+          "name": "Text Summarization",
+          "prompt": "Summarize the following in exactly 2 sentences: The Internet is a global network of interconnected computers that communicate using standardized protocols. It was developed from the ARPANET in the late 1960s and has since grown to connect billions of devices worldwide. The Internet enables services such as email, the World Wide Web, social media, file sharing, and online gaming.",
+          "expectedKeywords": ["internet", "network", "global", "connect"],
+          "maxTokens": 100
+        },
+        {
+          "id": "std-003",
+          "category": "coding",
+          "name": "Simple Algorithm",
+          "prompt": "Write a JavaScript function that takes an array of numbers and returns the sum of all even numbers. Include a brief comment explaining the function.",
+          "expectedKeywords": ["function", "filter", "reduce", "even", "return"],
+          "maxTokens": 200
+        },
+        {
+          "id": "std-004",
+          "category": "factual",
+          "name": "Factual Recall",
+          "prompt": "What is the capital of France, and what is the name of the famous iron tower located there? Answer concisely.",
+          "expectedKeywords": ["paris", "eiffel", "tower", "france"],
+          "maxTokens": 80
+        },
+        {
+          "id": "std-005",
+          "category": "instruction_following",
+          "name": "Format Compliance",
+          "prompt": "List exactly 3 benefits of exercise. Format your response as a numbered list. Do not include any introduction or conclusion.",
+          "expectedKeywords": ["1.", "2.", "3.", "exercise", "health"],
+          "maxTokens": 150
+        }
+      ]
+    },
+    "coding": {
+      "name": "Coding Benchmark Suite",
+      "description": "Prompts focused on code generation and technical tasks",
+      "prompts": [
+        {
+          "id": "code-001",
+          "category": "coding",
+          "name": "Array Operations",
+          "prompt": "Write a JavaScript function that removes duplicates from an array while preserving order. Use modern ES6+ syntax.",
+          "expectedKeywords": ["function", "set", "array", "return", "filter"],
+          "maxTokens": 200
+        },
+        {
+          "id": "code-002",
+          "category": "coding",
+          "name": "Async Pattern",
+          "prompt": "Write a JavaScript async function that fetches data from a URL, handles errors gracefully, and returns null on failure. Include error logging.",
+          "expectedKeywords": ["async", "await", "try", "catch", "fetch", "null"],
+          "maxTokens": 250
+        },
+        {
+          "id": "code-003",
+          "category": "coding",
+          "name": "Data Transformation",
+          "prompt": "Write a JavaScript function that takes an array of objects with 'name' and 'score' properties and returns the top 3 by score as a sorted array.",
+          "expectedKeywords": ["sort", "slice", "score", "function", "return"],
+          "maxTokens": 200
+        }
+      ]
+    },
+    "reasoning": {
+      "name": "Reasoning Benchmark Suite",
+      "description": "Prompts focused on logical and analytical reasoning",
+      "prompts": [
+        {
+          "id": "reas-001",
+          "category": "reasoning",
+          "name": "Syllogism",
+          "prompt": "All mammals are warm-blooded. Whales are mammals. What can you conclude? State your conclusion and explain the logical form used.",
+          "expectedKeywords": ["warm-blooded", "whales", "conclude", "syllogism", "mammals"],
+          "maxTokens": 150
+        },
+        {
+          "id": "reas-002",
+          "category": "reasoning",
+          "name": "Math Word Problem",
+          "prompt": "A train travels at 60 mph. How long does it take to travel 150 miles? Show your calculation.",
+          "expectedKeywords": ["2.5", "hours", "150", "60", "divide"],
+          "maxTokens": 100
+        },
+        {
+          "id": "reas-003",
+          "category": "reasoning",
+          "name": "Cause and Effect",
+          "prompt": "If a company raises its prices by 20% and sales drop by 15%, what happens to total revenue? Calculate and explain.",
+          "expectedKeywords": ["revenue", "increase", "multiply", "percent", "result"],
+          "maxTokens": 150
+        }
+      ]
+    },
+    "creative": {
+      "name": "Creative Benchmark Suite",
+      "description": "Prompts focused on creative writing and generation",
+      "prompts": [
+        {
+          "id": "crea-001",
+          "category": "creative",
+          "name": "Short Story",
+          "prompt": "Write a 3-sentence story about a robot who learns to paint. Make it emotionally resonant.",
+          "expectedKeywords": ["robot", "paint", "art", "color", "learn"],
+          "maxTokens": 150
+        },
+        {
+          "id": "crea-002",
+          "category": "creative",
+          "name": "Metaphor Creation",
+          "prompt": "Create 3 original metaphors for the concept of 'time'. Each metaphor should be on its own line and should not use common clichés.",
+          "expectedKeywords": ["time", "like", "river", "sand", "clock"],
+          "maxTokens": 150
+        }
+      ]
+    }
+  }
+}

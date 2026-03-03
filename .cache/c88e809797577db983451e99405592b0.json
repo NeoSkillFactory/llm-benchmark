@@ -1,0 +1,23 @@
+{
+  "timestamp": 1772463083183,
+  "result": {
+    "model": "claude-haiku-4-5",
+    "promptId": "std-005",
+    "promptName": "Format Compliance",
+    "category": "instruction_following",
+    "response": "1. Improved cardiovascular health and reduced heart disease risk.\n2. Enhanced mental health and reduced symptoms of anxiety and depression.\n3. Increased strength and muscle mass supporting long-term mobility.",
+    "latencyMs": 458,
+    "wordCount": 29,
+    "inputTokens": 26,
+    "outputTokens": 37,
+    "metrics": {
+      "latencyScore": 1,
+      "keywordCoverage": 0.8,
+      "responseQuality": 1,
+      "wordCountScore": 0.25892857142857145
+    },
+    "compositeScore": 0.85,
+    "grade": "B",
+    "fromCache": false
+  }
+}

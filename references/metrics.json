@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "description": "Metric definitions and scoring weights for LLM benchmark evaluation",
+  "metrics": {
+    "latency": {
+      "name": "Response Latency",
+      "description": "Time in milliseconds from request to complete response",
+      "unit": "ms",
+      "weight": 0.20,
+      "lowerIsBetter": true,
+      "scoring": {
+        "excellent": { "threshold": 1000, "score": 1.0 },
+        "good": { "threshold": 3000, "score": 0.75 },
+        "acceptable": { "threshold": 8000, "score": 0.50 },
+        "slow": { "threshold": 15000, "score": 0.25 },
+        "poor": { "threshold": null, "score": 0.0 }
+      }
+    },
+    "wordCount": {
+      "name": "Response Word Count",
+      "description": "Number of words in the response",
+      "unit": "words",
+      "weight": 0.10,
+      "lowerIsBetter": false,
+      "scoring": {
+        "description": "Scored relative to maxTokens target"
+      }
+    },
+    "keywordCoverage": {
+      "name": "Keyword Coverage",
+      "description": "Percentage of expected keywords present in the response (case-insensitive)",
+      "unit": "percentage",
+      "weight": 0.40,
+      "lowerIsBetter": false,
+      "scoring": {
+        "excellent": { "threshold": 0.80, "score": 1.0 },
+        "good": { "threshold": 0.60, "score": 0.75 },
+        "acceptable": { "threshold": 0.40, "score": 0.50 },
+        "poor": { "threshold": 0.20, "score": 0.25 },
+        "very_poor": { "threshold": null, "score": 0.0 }
+      }
+    },
+    "responseQuality": {
+      "name": "Response Quality",
+      "description": "Composite quality score based on structure and completeness",
+      "unit": "score",
+      "weight": 0.30,
+      "lowerIsBetter": false,
+      "factors": {
+        "nonEmpty": { "description": "Response is non-empty", "weight": 0.30 },
+        "minLength": { "description": "Response has at least 10 words", "weight": 0.20 },
+        "noErrors": { "description": "No error messages detected", "weight": 0.30 },
+        "structured": { "description": "Response appears structured/complete", "weight": 0.20 }
+      }
+    }
+  },
+  "aggregation": {
+    "method": "weighted_average",
+    "description": "Final score is a weighted average of all metrics",
+    "totalWeight": 1.0
+  },
+  "grades": {
+    "A": { "minScore": 0.85, "label": "Excellent" },
+    "B": { "minScore": 0.70, "label": "Good" },
+    "C": { "minScore": 0.55, "label": "Acceptable" },
+    "D": { "minScore": 0.40, "label": "Below Average" },
+    "F": { "minScore": 0.0, "label": "Poor" }
+  }
+}

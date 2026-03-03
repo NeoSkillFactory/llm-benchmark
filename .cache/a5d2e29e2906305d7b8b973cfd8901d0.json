@@ -1,0 +1,23 @@
+{
+  "timestamp": 1772463090126,
+  "result": {
+    "model": "claude-haiku-4-5",
+    "promptId": "reas-001",
+    "promptName": "Syllogism",
+    "category": "reasoning",
+    "response": "Based on logical analysis: yes, the conclusion follows directly. The reasoning is transitive — if all A are B and all B are C, then all A are C. This is a classic syllogism pattern used in formal logic.",
+    "latencyMs": 558,
+    "wordCount": 39,
+    "inputTokens": 26,
+    "outputTokens": 50,
+    "metrics": {
+      "latencyScore": 1,
+      "keywordCoverage": 0.2,
+      "responseQuality": 1,
+      "wordCountScore": 0.3482142857142857
+    },
+    "compositeScore": 0.61,
+    "grade": "C",
+    "fromCache": false
+  }
+}

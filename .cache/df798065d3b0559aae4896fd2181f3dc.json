@@ -1,0 +1,23 @@
+{
+  "timestamp": 1772463089251,
+  "result": {
+    "model": "claude-haiku-4-5",
+    "promptId": "code-001",
+    "promptName": "Array Operations",
+    "category": "coding",
+    "response": "// Function to sum even numbers from an array\nfunction sumEvenNumbers(arr) {\n  return arr.filter(n => n % 2 === 0).reduce((sum, n) => sum + n, 0);\n}",
+    "latencyMs": 931,
+    "wordCount": 27,
+    "inputTokens": 22,
+    "outputTokens": 35,
+    "metrics": {
+      "latencyScore": 1,
+      "keywordCoverage": 0.8,
+      "responseQuality": 1,
+      "wordCountScore": 0.18
+    },
+    "compositeScore": 0.84,
+    "grade": "B",
+    "fromCache": false
+  }
+}

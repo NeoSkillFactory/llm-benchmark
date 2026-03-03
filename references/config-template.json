@@ -1,0 +1,33 @@
+{
+  "_comment": "Copy this file to your project as benchmark.config.json and customize",
+  "version": "1.0.0",
+  "models": [
+    "claude-haiku-4-5",
+    "claude-sonnet-4-6"
+  ],
+  "suite": "standard",
+  "customPrompts": null,
+  "output": {
+    "format": "markdown",
+    "path": "./benchmark-report",
+    "includeTimestamp": true
+  },
+  "cache": {
+    "enabled": true,
+    "directory": ".cache",
+    "ttlHours": 24
+  },
+  "api": {
+    "anthropic": {
+      "keyEnvVar": "ANTHROPIC_API_KEY",
+      "maxRetries": 3,
+      "timeoutMs": 30000
+    }
+  },
+  "advanced": {
+    "concurrency": 2,
+    "warmupRuns": 0,
+    "repeatEach": 1,
+    "verbose": false
+  }
+}

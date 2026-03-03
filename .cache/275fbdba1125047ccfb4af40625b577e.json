@@ -1,0 +1,23 @@
+{
+  "timestamp": 1772463083028,
+  "result": {
+    "model": "claude-haiku-4-5",
+    "promptId": "std-002",
+    "promptName": "Text Summarization",
+    "category": "summarization",
+    "response": "The Internet is a global network of interconnected computers, developed from ARPANET in the 1960s, that now connects billions of devices worldwide enabling email, web browsing, and social media.",
+    "latencyMs": 910,
+    "wordCount": 29,
+    "inputTokens": 76,
+    "outputTokens": 37,
+    "metrics": {
+      "latencyScore": 1,
+      "keywordCoverage": 1,
+      "responseQuality": 1,
+      "wordCountScore": 0.38666666666666666
+    },
+    "compositeScore": 0.94,
+    "grade": "A",
+    "fromCache": false
+  }
+}

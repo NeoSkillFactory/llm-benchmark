@@ -1,0 +1,23 @@
+{
+  "timestamp": 1772463083235,
+  "result": {
+    "model": "claude-sonnet-4-6",
+    "promptId": "std-001",
+    "promptName": "Logical Deduction",
+    "category": "reasoning",
+    "response": "Based on logical analysis: yes, the conclusion follows directly. The reasoning is transitive — if all A are B and all B are C, then all A are C. This is a classic syllogism pattern used in formal logic.",
+    "latencyMs": 530,
+    "wordCount": 39,
+    "inputTokens": 27,
+    "outputTokens": 50,
+    "metrics": {
+      "latencyScore": 1,
+      "keywordCoverage": 0.6,
+      "responseQuality": 1,
+      "wordCountScore": 0.26
+    },
+    "compositeScore": 0.77,
+    "grade": "B",
+    "fromCache": false
+  }
+}

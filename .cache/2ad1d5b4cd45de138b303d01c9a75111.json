@@ -1,0 +1,23 @@
+{
+  "timestamp": 1772463083389,
+  "result": {
+    "model": "claude-sonnet-4-6",
+    "promptId": "std-004",
+    "promptName": "Factual Recall",
+    "category": "factual",
+    "response": "The capital of France is Paris. The famous iron tower located there is the Eiffel Tower, built in 1889.",
+    "latencyMs": 955,
+    "wordCount": 19,
+    "inputTokens": 26,
+    "outputTokens": 24,
+    "metrics": {
+      "latencyScore": 1,
+      "keywordCoverage": 1,
+      "responseQuality": 0.9,
+      "wordCountScore": 0.31666666666666665
+    },
+    "compositeScore": 0.9,
+    "grade": "A",
+    "fromCache": false
+  }
+}

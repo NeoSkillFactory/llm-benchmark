@@ -1,0 +1,32 @@
+{
+  "name": "llm-benchmark",
+  "version": "1.0.0",
+  "description": "Automated LLM benchmarking across multiple models with standardized prompts and performance reports",
+  "main": "scripts/benchmark.js",
+  "bin": {
+    "llm-benchmark": "scripts/cli.js"
+  },
+  "scripts": {
+    "start": "node scripts/cli.js",
+    "test": "node tests/benchmark.test.js",
+    "benchmark": "node scripts/cli.js --suite standard --dry-run"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.36.3",
+    "commander": "^12.1.0",
+    "csv-stringify": "^6.5.1"
+  },
+  "devDependencies": {},
+  "keywords": [
+    "llm",
+    "benchmark",
+    "ai",
+    "evaluation",
+    "openclaw"
+  ],
+  "author": "OpenClaw",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
