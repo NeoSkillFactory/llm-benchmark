@@ -2,22 +2,16 @@
 
 ![Audit](https://img.shields.io/badge/audit%3A%20PASS-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue) ![OpenClaw](https://img.shields.io/badge/OpenClaw-skill-orange)
 
-> A skill that automatically benchmarks LLM responses across multiple models using standardized prompts and generates performance reports with quality metrics.
+> Automated LLM benchmarking across multiple models with standardized prompts and performance reports.
 
-I don't have context about what you were doing previously. Could you tell me what task you were working on or what you'd like me to continue with?
+llm-benchmark is a skill that automated llm benchmarking across multiple models with standardized prompts and performance reports.  
+See the source code for full details and usage instructions.
 
-If you were in the middle of something specific (like file operations, web research, coding, etc.), just let me know what you need and I'll pick up from there.
+## GitHub
 
-## OpenClaw Marketplace
+Source code: [github.com/NeoSkillFactory/llm-benchmark](https://github.com/NeoSkillFactory/llm-benchmark)
 
-This skill is available on [ClawHub](https://clawhub.ai) — the OpenClaw skill marketplace.
-Install it in any OpenClaw agent workspace with:
-
-```bash
-clawhub install llm-benchmark
-```
-
-**Recommended price when commercial:** $69 USD
+**Price suggestion:** $69 USD
 
 ## License
 
