@@ -11,8 +11,6 @@ See the source code for full details and usage instructions.
 
 Source code: [github.com/NeoSkillFactory/llm-benchmark](https://github.com/NeoSkillFactory/llm-benchmark)
 
-**Price suggestion:** $69 USD
-
 ## License
 
 MIT © NeoSkillFactory
