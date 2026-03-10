@@ -4,7 +4,7 @@
 
 > Automated LLM benchmarking across multiple models with standardized prompts and performance reports.
 
-llm-benchmark is a skill that automated llm benchmarking across multiple models with standardized prompts and performance reports.  
+llm-benchmark Automated llm benchmarking across multiple models with standardized prompts and performance reports.  
 See the source code for full details and usage instructions.
 
 ## GitHub
